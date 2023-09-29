@@ -1,0 +1,13 @@
+2023-09-29 16:54:59,168 - test_open_website - INFO - Starting the test_open_website function
+2023-09-29 16:54:59,169 - test_open_website - INFO - Opening URL: https://nces.ed.gov/ccd/schoolsearch/
+2023-09-29 16:55:03,670 - test_open_website - INFO - Capturing screenshot: After opening website
+2023-09-29 16:55:03,790 - test_open_website - INFO - Selecting a random state
+2023-09-29 16:55:04,136 - test_open_website - INFO - Entering the selected state name: Connecticut
+2023-09-29 16:55:04,136 - test_open_website - INFO - Capturing screenshot: After Selecting State Name
+2023-09-29 16:55:04,265 - test_open_website - INFO - Selecting a random city
+2023-09-29 16:55:07,161 - test_open_website - INFO - Entering the selected city name: Washington
+2023-09-29 16:55:09,268 - test_open_website - INFO - Capturing screenshot: After Selecting City Name
+2023-09-29 16:55:15,652 - test_open_website - INFO - csv file is created
+2023-09-29 16:55:15,989 - test_open_website - INFO - data has been entered in csv file
+2023-09-29 16:55:15,990 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
+2023-09-29 16:55:16,199 - test_open_website - INFO - Finishing the test_open_website function
