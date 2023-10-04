@@ -45,11 +45,16 @@ def test_open_website(driver, test_base):
     # Find the dropdown element
     dropdown_element = search_item.find_element(*SchoolLocators.DROPDOWN_STATE)
 
-    # Use the Select class to work with the dropdown
-    select = Select(dropdown_element)
+    # # Use the Select class to work with the dropdown
+    # select = Select(dropdown_element)
+    #
+    # select.select_by_visible_text(selected_state)
+    # selected_state = select.first_selected_option.text
 
-    select.select_by_visible_text(selected_state)
-    selected_state = select.first_selected_option.text
+    state_locator = SchoolLocators.DROPDOWN_STATE
+    selected_state = test_base.select(state_locator, selected_state)
+
+
 
     logger.info("Entering the selected state name: %s", selected_state)
 

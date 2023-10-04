@@ -5,6 +5,7 @@ import os
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import datetime
+from selenium.webdriver.support.ui import Select
 
 
 class TestBase:
@@ -22,6 +23,11 @@ class TestBase:
         wait = WebDriverWait(self.driver, timeout)
         element = wait.until(EC.element_to_be_clickable(locator))
         return element
+
+    def select(self, locator, option_text):
+        element = self.find_element(*locator)
+        select = Select(element)
+        select.select_by_visible_text(option_text)
 
     def create_csv_file(self, filename, header):
         self.csv_file = open(filename, "w", newline="", encoding="utf-8")
