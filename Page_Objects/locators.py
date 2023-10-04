@@ -14,8 +14,12 @@ class SchoolLocators:
     SCHOOL_NAMES = (By.XPATH, "//font[@face='Times']")
     PHONE_NUMBERS = (By.XPATH, "//font[contains(text(), '(') and contains(text(), ')')]")
     COUNTRY_NAMES = (By.XPATH, "//*[contains(text(), 'County')]")
+    STUDENTS_COUNT = (By.XPATH, "//div[@class='sfsContent']/table[3]/tbody/tr/td/table/tbody/tr/td[5]/font")
+    GRADES = (By.XPATH, "//div[@class='sfsContent']/table[3]/tbody/tr/td/table/tbody/tr/td[6]/font")
 
     SCHOOL_NUMBERS = (By.XPATH, "//font[@face='Times']")
+
+
 
 
 

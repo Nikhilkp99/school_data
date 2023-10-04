@@ -4,6 +4,7 @@ import inspect
 import os
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import datetime
 
 
 class TestBase:
@@ -40,7 +41,7 @@ class TestBase:
         logger.setLevel(logging.INFO)
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-        report_dir = os.path.join(os.getcwd(), "Reports")
+        report_dir = os.path.join(os.getcwd(), "..", "Reports")
         log_dir = os.path.join(report_dir, "Logs")
         if not os.path.exists(log_dir):
             os.makedirs(log_dir)
@@ -52,18 +53,20 @@ class TestBase:
         return logger
 
     def capture_screenshot(self, name, test_case_name):
-        report_dir = os.path.join(os.getcwd(), "Reports")  # Move one level up (. .)
-        screenshot_dir = os.path.join(os.getcwd(), "Reports", "Screenshots")
+        report_dir = os.path.join(os.getcwd(), "..", "Reports")  # Move one level up (. .)
+        screenshot_dir = os.path.join(report_dir, "Screenshots")
 
         if not os.path.exists(screenshot_dir):
             os.makedirs(screenshot_dir)
 
-        screenshot_path = os.path.join(screenshot_dir, f"{test_case_name}_{name}.png")
+        timestamp = datetime.datetime.now().strftime("%y_%m_%d_%H_%M_%S")
+
+        screenshot_path = os.path.join(screenshot_dir, f"{test_case_name}_{timestamp}.png")
 
         self.driver.save_screenshot(screenshot_path)
 
     def clear_previous_reports_and_screenshots(self):
-        report_dir = os.path.join(os.getcwd(), "Reports")
+        report_dir = os.path.join(os.getcwd(), "..", "Reports")
         screenshot_dir = os.path.join(report_dir, "Screenshots")
         log_dir = os.path.join(report_dir, "Logs")
 
