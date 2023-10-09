@@ -6,7 +6,6 @@ from Constants.constant import Constant
 from Page_Objects.home_page import SchoolLocators
 from Page_Objects.home_page import SearchItem
 # import pdb
-from selenium.webdriver.support.ui import Select
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -35,37 +34,27 @@ def test_open_website(driver, test_base):
 
     search_item.wait_for_element(SchoolLocators.DROPDOWN_STATE)
 
-    # getting the value of an environment variable named "STATE_NAME"
-    state_name = os.environ.get('STATE_NAME')
-
-    default_state = "Hawaii"  # default state here
-
-    selected_state = state_name.strip() if state_name is not None and state_name.strip() != "" else default_state
-
+    selected_state = search_item.get_state_name()
+    logger.info("Entering the selected state name: %s", selected_state)
     # Find the dropdown element
     dropdown_element = search_item.find_element(*SchoolLocators.DROPDOWN_STATE)
-
-    # # Use the Select class to work with the dropdown
-    # select = Select(dropdown_element)
-    #
-    # select.select_by_visible_text(selected_state)
-    # selected_state = select.first_selected_option.text
 
     state_locator = SchoolLocators.DROPDOWN_STATE
     selected_state = test_base.select(state_locator, selected_state)
 
-
-
-    logger.info("Entering the selected state name: %s", selected_state)
-
     logger.info("Capturing screenshot: After Selecting State Name")
     test_base.capture_screenshot(f"Selected_State_", "test_open_website")
 
-    # getting the value of an environment variable named "CITY_NAME"
-    city_name = os.environ.get('CITY_NAME')
+    search_item.select_city()
+    search_item.wait_for_element_interactable(SchoolLocators.CITY_LIST)
 
-    default_city_name = "Kailua"  # default city name
-    selected_city_name = city_name.strip() if city_name is not None and city_name.strip() != "" else default_city_name
+    main_window_handle = driver.window_handles[0]
+    new_window_handle = driver.window_handles[1]
+    driver.switch_to.window(new_window_handle)
+    search_item.wait_for_element_interactable(SchoolLocators.CITY_NAMES)
+
+    selected_city_name = search_item.make_city_list()
+    driver.switch_to.window(main_window_handle)
 
     logger.info("Entering the selected city name: %s", selected_city_name)
 
@@ -79,17 +68,13 @@ def test_open_website(driver, test_base):
     search_item.wait_for_element(SchoolLocators.DATA_PAGE)
     time.sleep(5)
 
-    header = ["no. ", " School Name ", " Phone ", " Country ", " Students ", " Grades "]
-    test_base.create_csv_file("school_data.csv", header)
+    test_base.create_csv_file("school_data.csv")
     logger.info("csv file is created")
-
-    school_number = 1
 
     # Loop through multiple pages
     while True:
         # Fetch and write data from the current page
-        search_item.fetch_and_write_data(test_base.csv_writer, school_number)
-        school_number += len(search_item.number_count())
+        search_item.fetch_and_write_data(test_base.csv_writer)
         logger.info("data has been entered in csv file")
 
         logger.info("Capturing screenshot: After School Data is loaded")
@@ -113,11 +98,3 @@ if __name__ == "__main__":
     report_dir = os.path.join(os.getcwd(), "..", "Reports")
     test_report_path = os.path.join(report_dir, "test_report.html")
     pytest.main(["-v", f"--html={test_report_path}"])
-
-
-
-
-
-
-
-

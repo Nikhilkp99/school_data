@@ -11,13 +11,19 @@ class SchoolLocators:
     CITY_INPUT = (By.XPATH, "//input[@name='City']")
     NEXT_BUTTON = (By.XPATH, "//a[text()='Next >>']")
 
-    SCHOOL_NAMES = (By.XPATH, "//font[@face='Times']")
-    PHONE_NUMBERS = (By.XPATH, "//font[contains(text(), '(') and contains(text(), ')')]")
-    COUNTRY_NAMES = (By.XPATH, "//*[contains(text(), 'County')]")
-    STUDENTS_COUNT = (By.XPATH, "//div[@class='sfsContent']/table[3]/tbody/tr/td/table/tbody/tr/td[5]/font")
-    GRADES = (By.XPATH, "//div[@class='sfsContent']/table[3]/tbody/tr/td/table/tbody/tr/td[6]/font")
+    NUMBERS = (By.XPATH, "//div[@class='sfsContent']/table[3]/tbody/tr/td/table/tbody/tr/td[1]")
+    SCHOOL_NAMES = (By.XPATH, "//div[@class='sfsContent']/table[3]/tbody/tr/td/table/tbody/tr/td[2]")
+    PHONE_NUMBERS = (By.XPATH, "//div[@class='sfsContent']/table[3]/tbody/tr/td/table/tbody/tr/td[3]")
+    COUNTRY_NAMES = (By.XPATH, "//div[@class='sfsContent']/table[3]/tbody/tr/td/table/tbody/tr/td[4]")
+    STUDENTS_COUNT = (By.XPATH, "//div[@class='sfsContent']/table[3]/tbody/tr/td/table/tbody/tr/td[5]")
+    GRADES = (By.XPATH, "//div[@class='sfsContent']/table[3]/tbody/tr/td/table/tbody/tr/td[6]")
 
     SCHOOL_NUMBERS = (By.XPATH, "//font[@face='Times']")
+
+    CITY_CLICK = (By.XPATH, "html/body/ul/li")
+
+
+
 
 
 

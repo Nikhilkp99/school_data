@@ -1,57 +1,13 @@
-2023-10-04 14:35:47,781 - test_open_website - INFO - Starting the test_open_website function
-2023-10-04 14:35:47,781 - test_open_website - INFO - Opening URL: https://nces.ed.gov/ccd/schoolsearch/
-2023-10-04 14:35:55,016 - test_open_website - INFO - Capturing screenshot: After opening website
-2023-10-04 14:35:57,454 - test_open_website - INFO - Entering the selected state name: None
-2023-10-04 14:35:57,455 - test_open_website - INFO - Capturing screenshot: After Selecting State Name
-2023-10-04 14:35:57,663 - test_open_website - INFO - Entering the selected city name: New York
-2023-10-04 14:36:00,439 - test_open_website - INFO - Capturing screenshot: After Selecting City Name
-2023-10-04 14:36:09,521 - test_open_website - INFO - csv file is created
-2023-10-04 14:36:10,228 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:36:10,228 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:36:16,576 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:36:16,576 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:36:22,832 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:36:22,832 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:36:28,476 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:36:28,476 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:36:34,921 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:36:34,921 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:36:40,568 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:36:40,568 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:36:46,357 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:36:46,357 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:36:52,531 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:36:52,531 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:36:57,994 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:36:57,994 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:37:04,147 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:37:04,147 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:37:09,673 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:37:09,673 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:37:15,914 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:37:15,914 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:37:22,025 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:37:22,025 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:37:27,687 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:37:27,687 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:37:33,800 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:37:33,800 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:37:39,342 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:37:39,342 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:37:45,772 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:37:45,772 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:37:51,857 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:37:51,857 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:37:57,412 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:37:57,412 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:38:03,537 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:38:03,538 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:38:09,104 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:38:09,104 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:38:15,282 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:38:15,282 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:38:20,721 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:38:20,721 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:38:26,241 - test_open_website - INFO - data has been entered in csv file
-2023-10-04 14:38:26,241 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
-2023-10-04 14:38:26,378 - test_open_website - INFO - Finishing the test_open_website function
+2023-10-05 20:17:43,313 - test_open_website - INFO - Starting the test_open_website function
+2023-10-05 20:17:43,314 - test_open_website - INFO - Opening URL: https://nces.ed.gov/ccd/schoolsearch/
+2023-10-05 20:17:47,217 - test_open_website - INFO - Capturing screenshot: After opening website
+2023-10-05 20:17:47,405 - test_open_website - INFO - Entering the selected state name: California
+2023-10-05 20:17:47,616 - test_open_website - INFO - Capturing screenshot: After Selecting State Name
+2023-10-05 20:17:48,761 - test_open_website - INFO - Entering the selected city name: Alta
+2023-10-05 20:17:50,903 - test_open_website - INFO - Capturing screenshot: After Selecting City Name
+2023-10-05 20:17:57,160 - test_open_website - INFO - csv file is created
+2023-10-05 20:17:58,275 - test_open_website - INFO - data has been entered in csv file
+2023-10-05 20:17:58,275 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
+2023-10-05 20:18:04,617 - test_open_website - INFO - data has been entered in csv file
+2023-10-05 20:18:04,617 - test_open_website - INFO - Capturing screenshot: After School Data is loaded
+2023-10-05 20:18:04,764 - test_open_website - INFO - Finishing the test_open_website function

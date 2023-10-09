@@ -29,10 +29,9 @@ class TestBase:
         select = Select(element)
         select.select_by_visible_text(option_text)
 
-    def create_csv_file(self, filename, header):
+    def create_csv_file(self, filename):
         self.csv_file = open(filename, "w", newline="", encoding="utf-8")
-        self.csv_writer = csv.writer(self.csv_file, delimiter=',')
-        self.csv_writer.writerow(header)
+        self.csv_writer = csv.writer(self.csv_file)
 
     def write_to_csv(self, data):
         self.csv_writer.writerow(data)
